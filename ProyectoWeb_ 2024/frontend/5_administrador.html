@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel de Administración</title>
+  <link rel="stylesheet" href="Styles.css" />
+  <link rel="icon" type="icon" href="img/application.png" />
+  <link rel="stylesheet" href="../index/for-all.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="icono">
+        <img src="img/application.png" alt="Logo EmpleosCR" />
+        <h1>EmpleosCR</h1>
+      </div>
+      <ul>
+        <li><a href="../index/index.html">Inicio</a></li>
+      </ul>
+      <div>
+        <a href="../configUsuario/configUsuario.html"><img src="img/perfil.png"
+            alt="Perfil de usuario" /></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <aside>
+      <img src="img/empleador-min.jpg" alt="panel de administración">
+    </aside>
+    <section>
+      <div>
+        <h2 class="logo"> Panel de <span>Administración</span></h2>
+      </div>
+      <form>
+        <!-- Sección de Gestión de Usuarios -->
+        <div class="grid">
+          <div>
+            <h3>Gestionar Usuarios</h3>
+          </div>
+          <div>
+            <label for="user_list">Lista de Usuarios</label>
+            <select id="user_list" required>
+              <option value="" disabled selected>Seleccione un usuario</option>
+              <!-- Usuarios ejemplo -->
+              <option value="user1">Juan Pérez (Solicitante de empleo)</option>
+              <option value="user2">Empresa XYZ (Empleador)</option>
+              <option value="user3">María Rodríguez (Solicitante de empleo)</option>
+              <!-- Más usuarios dinámicamente -->
+            </select>
+          </div>
+          <!-- Acciones sobre usuarios -->
+          <div>
+            <label for="user_action">Acción</label>
+            <select id="user_action" required>
+              <option value="" disabled selected>Seleccione una acción</option>
+              <option value="activate">Activar Cuenta</option>
+              <option value="deactivate">Desactivar Cuenta</option>
+              <option value="change_role">Cambiar Rol (Solicitante/Empleador)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Sección de Moderación de Publicaciones -->
+        <div class="grid">
+          <div>
+            <h3>Moderar Publicaciones de Trabajo</h3>
+          </div>
+          <div>
+            <label for="job_list">Lista de Ofertas de Trabajo</label>
+            <select id="job_list" required>
+              <option value="" disabled selected>Seleccione una oferta</option>
+              <!-- Ofertas de trabajo ejemplo -->
+              <option value="job1">Desarrollador de Software - Empresa XYZ</option>
+              <option value="job2">Gerente de Recursos Humanos - Empresa ABC</option>
+              <!-- Más ofertas dinámicamente -->
+            </select>
+          </div>
+          <!-- Acciones sobre publicaciones -->
+          <div>
+            <label for="job_action">Acción</label>
+            <select id="job_action" required>
+              <option value="" disabled selected>Seleccione una acción</option>
+              <option value="approve">Aprobar Publicación</option>
+              <option value="delete">Eliminar Publicación</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Botón de envío -->
+        <div class="register">
+          <button type="submit">Aplicar Cambios</button>
+        </div>
+      </form>
+    </section>
+    <br />
+  </main>
+
+  <footer>
+    <div class="footer">
+      <p>
+        &copy; 2024 EmpleosCR Inc. | Jeiner Blanco | Jose Aleman
+      </p>
+    </div>
+  </footer>
+  <script src="adminPanel.js"></script>
+</body>
+
+</html>

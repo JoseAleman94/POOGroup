@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publicacion Oferta</title>
+  <link rel="stylesheet" href="Styles.css" />
+  <link rel="icon" type="icon" href="img/application.png" />
+  <link rel="stylesheet" href="../index/for-all.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="icono">
+        <img src="img/application.png" alt="Logo EmpleosCR" />
+        <h1>EmpleosCR</h1>
+      </div>
+      <ul>
+        <li><a href="../index/index.html">Inicio</a></li>
+      </ul>
+      <div>
+        <a href="../configUsuario/configUsuario.html"><img src="img/perfil.png"
+            alt="Perfil de usuario" /></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <aside>
+      <img src="img/empleador-min.jpg" alt="imagen aside habitacion">
+    </aside>
+    <section>
+        <div>
+          <h2 class="logo"> Publicar <span>Oferta de Trabajo</span></h2>
+        </div>
+        <form>
+          <div class="grid">
+            <!-- Select de Título del Empleo -->
+            <div>
+              <label for="job_title">Título del Empleo</label>
+              <select id="job_title" required>
+                <option value="" disabled selected>Seleccione un título de empleo</option>
+                <option value="developer">Desarrollador de Software</option>
+                <option value="designer">Diseñador Gráfico</option>
+                <option value="marketing">Especialista en Marketing</option>
+                <option value="sales">Ejecutivo de Ventas</option>
+                <option value="hr">Gerente de Recursos Humanos</option>
+                <option value="project_manager">Gerente de Proyectos</option>
+                <option value="data_analyst">Analista de Datos</option>
+                <option value="qa_engineer">Ingeniero de QA</option>
+                <option value="customer_support">Soporte al Cliente</option>
+                <option value="finance_manager">Gerente Financiero</option>
+              </select>
+            </div>
+            <div>
+              <label for="description">Descripción del trabajo</label>
+              <textarea required placeholder="Describa las responsabilidades y requisitos"></textarea>
+            </div>
+            <!-- Select de Rango Salarial -->
+            <div>
+              <label for="salary">Rango Salarial</label>
+              <select id="salary" required>
+                <option value="" disabled selected>Seleccione un rango salarial</option>
+                <option value="menos_500">Menos de 500 USD</option>
+                <option value="500_1000">500 - 1000 USD</option>
+                <option value="1000_2000">1000 - 2000 USD</option>
+                <option value="2000_3000">2000 - 3000 USD</option>
+                <option value="3000_mas">Más de 3000 USD</option>
+              </select>
+            </div>
+            <!-- Select de Provincias -->
+            <div>
+              <label for="location">Ubicación</label>
+              <select id="location" required>
+                <option value="" disabled selected>Seleccione una provincia</option>
+                <option value="san_jose">San José</option>
+                <option value="alajuela">Alajuela</option>
+                <option value="heredia">Heredia</option>
+                <option value="cartago">Cartago</option>
+                <option value="guanacaste">Guanacaste</option>
+                <option value="puntarenas">Puntarenas</option>
+                <option value="limon">Limón</option>
+              </select>
+            </div>
+            <div>
+              <label for="job_type">Tipo de trabajo</label>
+              <select name="job_type">
+                <option value="full_time">Tiempo completo</option>
+                <option value="part_time">Medio tiempo</option>
+              </select>
+            </div>
+            <div>
+              <label for="modalidad">Modalidad</label>
+              <select name="modalidad">
+                <option value="presencial">Presencial</option>
+                <option value="remoto">Remoto</option>
+                <option value="hibrido">Híbrido</option>
+              </select>
+            </div>
+            <div>
+              <label for="expiration">Fecha de vencimiento</label>
+              <input type="date" required>
+            </div>
+            <div class="register">
+              <button type="submit">Publicar oferta</button>
+            </div>
+          </div>
+        </form>
+      </section>
+          <br />
+  </main>
+  <footer>
+    <div class="footer">
+      <p>
+        &copy; 2024 EmpleosCR Inc. | Jeiner Blanco | Jose Aleman
+      </p>
+    </div>
+  </footer>
+  <script src="registroNegocio.js"></script>
+</body>
+
+</html>

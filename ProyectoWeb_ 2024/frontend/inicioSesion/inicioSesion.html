@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesion</title>
+    <link rel="stylesheet" href="/frontend/header_footer/header_footer.css"> 
+    <link rel="stylesheet" href="./inicioSesion.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="./inicioSesion.js"></script>
+</head>
+<body>
+    <header> 
+        <div class="contenedor-header">
+            <div class="header-izquierdo">
+                <a href="../LandingPageProducto/landingProducto.html"><img class="logo" src="../header_footer/logoCostaVerde.jpeg" alt="Logo de Harbor"> </a>
+                <div class="botones-izquierdos">
+                    <a class="botones-navegar" href="../alojamiento/alojamiento.html">Alojamiento </a>
+                    <a class="botones-navegar" href="../restaurante/restaurante.html" style="margin: 0 15px 0 15px;">Restaurantes </a> 
+                    <a class="botones-navegar" href="../serviciosTuristicos/serviciosTuristicos.html">Servicios Turisticos</a>
+                </div>
+                <div class="header-derecha">
+                    <a id="registrarse" href="../registroUsuario/registroUsuario.html">Registrarse</a>
+                </div>
+            </div> 
+        </div>
+    </header>
+    <main>
+        <section class="fondo" > 
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp"
+              alt="foto de inicio sesion" class="imagen"  />
+                <div class="caja-formulario">
+                <form id="formulario" >
+                    <label for="name">correo Electronico   </label>
+                    <input type="email" name="name"  id="correoElectronico">
+                    <label for="lastname">Contraseña  </label>
+                    <input type="password" name="lastname"  id="password">
+                    <button style="border-radius: 15px;" type="submit">Iniciar Sesion</button>
+                    <p >No Tienes Cuenta? <a href="../registroUsuario/registroUsuario.html"
+                    >Registrate Aqui</a></p>
+                </form>
+              </div>
+        </section>
+          </main>
+    <footer> 
+        <div class="footer-izquierdo">
+            <button href="#"  class="nav-button">Inicio</button>
+            <button href=https://www.ict.go.cr/es/ class="nav-button">Instituto Costarricense de Turismo, Sitio Institucional </button>
+        </div>
+        <div class="footer-derecho">
+            <a href="https://www.facebook.com"><img src="https://th.bing.com/th/id/R.f3cbf3b655e1bfbb9bfa403a5b9a21f7?rik=vxc%2b3AhsXZNjSg&riu=http%3a%2f%2fstatic1.squarespace.com%2fstatic%2f61f056235a60a35dc92b81a4%2ft%2f633c5a0f3ec27d603c12f519%2f1664899601049%2flogo-facebook-best-facebook-logo-icons-gif-transparent-png-images-8.png%3fformat%3d1500w&ehk=4DsJ%2bz9sehuCsVm1d6XgdwU9j%2b0XYLrI7qbhw%2fuVJjE%3d&risl=&pid=ImgRaw&r=0" alt="Facebook"></a>
+            <a href="https://www.instagram.com"><img src="https://th.bing.com/th/id/R.2f0fe36a61a5cae368821fcd25600f8d?rik=iee0kPcyrl9psg&riu=http%3a%2f%2fwww.antoine-derrien.fr%2fwp-content%2fuploads%2f2017%2f02%2flogo_instagram_transparent.png&ehk=JMCKKnIDy55rsTb96FswCDzR2oOkRiv0hzfT7RUdyC4%3d&risl=&pid=ImgRaw&r=0" alt="Instagram"></a>
+        </div>
+    </footer>
+</body>
+</html>
