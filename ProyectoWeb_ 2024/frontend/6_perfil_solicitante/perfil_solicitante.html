@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil Solicitante</title>
+    <link rel="stylesheet" href="perfil_solicitante.css">
+    <link rel="icon" type="icon" href="../img/application.png" />
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Cloudinary Widget -->
+    <script src="https://widget.cloudinary.com/v2.0/global/all.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#" class="nav-link"></a></li>
+            <li class="nav-item"><a href="../3_Home/home.html" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="../4_publicar_empleos/publicar_empleo.html" class="nav-link">Publicar Empleo</a></li>
+            <li class="nav-item"><a href="../1_registro_usuarios/registro_usuario.html" class="nav-link">Registrarse</a></li>
+            <li class="nav-item"><a href="../2_Login/login.html" class="nav-link">Iniciar Sesion</a></li>
+        </ul>
+        <div class="usuario">
+            <button onclick="salir()">Salir</button>
+        </div>
+    </nav>
+
+    <main>
+        <aside></aside>
+        <section>
+            <div>
+                <h2 class="logo">Perfil de <span id="nombreUsuario"></span></h2>
+            </div>
+            <form id="formulario">
+                <div class="grid">
+                    
+                      <!-- Campo oculto para almacenar el correo electrónico -->
+                        <input type="hidden" id="email_oculto" name="email_oculto">
+                    <div>
+                        <label for="name">Nombre Completo</label>
+                        <input type="text" id="name" required placeholder="Ingrese su nombre completo">
+                    </div>
+                    <!-- Correo electrónico -->
+                    <div>
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" required placeholder="ejemplo@correo.com">
+                    </div>
+                    <!-- Número de contacto -->
+                    <div>
+                        <label for="phone">Número de contacto</label>
+                        <input type="tel" id="phone" required placeholder="Ingrese su número de contacto">
+                    </div>
+                    <!-- Select de Experiencia laboral -->
+                    <div>
+                        <label for="experience">Años de experiencia</label>
+                        <select id="experience" required>
+                            <option value="" disabled selected>Seleccione los años de experiencia</option>
+                            <option value="1">1 año</option>
+                            <option value="2">2 años</option>
+                            <option value="3">3 años</option>
+                            <option value="4">4 años</option>
+                            <option value="5">5 años</option>
+                            <option value="6+">Más de 6 años</option>
+                        </select>
+                    </div>
+                    <!-- Cargar currículum -->
+                    <!-- Select de Preferencias laborales - Modalidad -->
+                    <div>
+                        <label for="modalidad">Modalidad de trabajo</label>
+                        <select id="modalidad" required>
+                            <option value="" disabled selected>Seleccione la modalidad</option>
+                            <option value="presencial">Presencial</option>
+                            <option value="remoto">Remoto</option>
+                            <option value="hibrido">Híbrido</option>
+                        </select>
+                    </div>
+                    <!-- Select de Tipo de Trabajo -->
+                    <div>
+                        <label for="job_type">Tipo de trabajo</label>
+                        <select id="job_type" required>
+                            <option value="" disabled selected>Seleccione el tipo de trabajo</option>
+                            <option value="full_time">Tiempo completo</option>
+                            <option value="part_time">Medio tiempo</option>
+                        </select>
+                    </div>
+                    <!-- Select de Provincia (Ubicación) -->
+                    <div>
+                        <label for="location">Ubicación</label>
+                        <select id="location" required>
+                            <option value="" disabled selected>Seleccione una provincia</option>
+                            <option value="san_jose">San José</option>
+                            <option value="alajuela">Alajuela</option>
+                            <option value="heredia">Heredia</option>
+                            <option value="cartago">Cartago</option>
+                            <option value="guanacaste">Guanacaste</option>
+                            <option value="puntarenas">Puntarenas</option>
+                            <option value="limon">Limón</option>
+                        </select>
+                    </div>
+                    <div class="register">
+                        <div>
+                            <label for="resume">Cargar currículum</label>
+                            <button type="button" id="subir_archivo">Subir archivo</button>
+                            <!-- Campo oculto para almacenar la URL del archivo subido -->
+                            <input type="hidden" id="archivo_url" name="archivo_url">
+                        </div>
+                        
+                        <img style="width: 50%; height: 50%;" id="vista-previa" alt="Imagen de perfil" />
+                      <button style="margin-bottom: 50vh;" type="submit">Guardar perfil</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <br />
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; 2024 EmpleosCR Inc. | Jeiner Blanco | Jose Aleman</p>
+        </div>
+    </footer>
+
+    <script src="perfil_solicitante.js"></script>
+</body>
+</html>

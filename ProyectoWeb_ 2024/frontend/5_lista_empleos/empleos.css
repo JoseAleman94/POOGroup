@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/* RESET */
+* {
+    
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+}
+
+
+
+
+/* Estilos del menú de navegación */
+.navbar {
+    background-color: white;
+    padding: 10px 0;
+    background: linear-gradient(180deg, #d580ff -40%, #ffffff 50%);
+
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #0056b3;
+    color: white;
+    border-radius: 4px;
+}
+
+
+
+
+/*Estilos para el header*/
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10vh;
+
+}
+header p{
+    font-size: 20px;
+    text-align: center;
+
+}
+
+span, .options p  {
+    color: #0e69c9;
+}
+
+
+
+
+
+
+/* Estilos para la sección de tarjetas */
+#cardSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta automáticamente las columnas */
+    gap: 20px;
+    padding: 20px;
+    padding-left: 100px; /* Espacio a la izquierda */
+    padding-right: 100px; /* Espacio a la derecha */
+    max-width: 1200px; /* Ancho máximo para evitar que se extienda demasiado */
+    margin: 0 auto;
+    background-color: #c3c1c1;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+}
+
+/* Estilos para las tarjetas */
+.modern-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+    background: #f0f2f4;
+    max-height: 400px;
+    min-width: 250px; /* Ancho mínimo fijo para tarjetas */
+    max-width: 250px; /* Ancho máximo para evitar que se extienda demasiado */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+
+.modern-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgb(255, 255, 255);
+    background: linear-gradient(180deg, #d580ff -40%, #ffffff 50%);
+
+}
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Mantener el tamaño de la tarjeta */
+    transition: background-color 0.3s, color 0.3s;
+
+}
+.card-body2 {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Mantener el tamaño de la tarjeta */
+    transition: background-color 0.3s, color 0.3s;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+    background: #f0f2f4;
+    
+
+
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 1700px) {
+    #cardSection {
+        grid-template-columns: repeat(auto-fit, minmax(4, 1fr)); /* Mantener el ancho mínimo */
+        padding-left: 20px; /* Reducir padding en pantallas pequeñas */
+        padding-right: 20px;
+    }
+}
+
+.card-title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #0e69c9;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.descripcion {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: center;
+}
+.job-type{
+    text-align: center;
+
+}
+
+.apply-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 2px solid #007bff;
+    color: #007bff;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.apply-button:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#limpiar{
+    display: flex;
+    width: 200px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 2px solid #007bff;
+    color: #007bff;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#limpiar:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.contienebtn{
+    display: flex;
+    justify-content: center;
+}
+
+/* FOOTER ESTATICO*/
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    position: fixed;
+    display: grid;
+    place-items: center;
+    /*background: #171A1F;*/
+    background-color: #555;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+
+.no_disponibles{
+    text-align: center;
+    color: #e10303;
+}
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; /* Permite que los elementos se muevan a la siguiente línea en pantallas pequeñas */
+    align-items: center;
+    background-color: #c3c1c1;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+    gap: 1rem; /* Espacio entre elementos */
+}
+.checks{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c3c1c1;
+    padding: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+
+}
+
+ .locations, .dates, #location {
+    flex: 1; /* Permite que cada elemento se ajuste automáticamente al espacio disponible */
+    min-width: 200px; /* Evita que se encojan demasiado en pantallas pequeñas */
+}
+
+ #location, #salary, #titulo {
+    width: 100%; /* Asegura que los select ocupen todo el ancho del contenedor */
+    border: 1px solid #ccc;
+    padding: 0.7rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+
+#location:hover, #salary:hover, #titulo:hover {
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background: linear-gradient(180deg, #d580ff -40%, #ffffff 50%);
+}
+
+.explore-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.explore-button:hover {
+    background-color: #0056b3;
+}
+
+/* Media query para pantallas medianas */
+@media (max-width: 768px) {
+    .search-bar {
+        flex-direction: column; /* Cambia la orientación a columna en pantallas medianas */
+        align-items: stretch; /* Hace que los elementos ocupen el ancho completo */
+    }
+
+  .locations, .dates, #location {
+        margin-right: 0; /* Elimina el margen derecho para evitar espacios no deseados */
+    }
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 480px) {
+     #location, #salary, #titulo {
+        font-size: 0.8rem; /* Reduce el tamaño de fuente en pantallas pequeñas */
+        padding: 0.5rem; /* Reduce el padding para ahorrar espacio */
+    }
+
+    .explore-button {
+        font-size: 0.9rem; /* Ajusta el tamaño del botón en pantallas pequeñas */
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5rem;
+    align-items: flex-start;
+    margin: 2vh;
+    
+}
+
+.options p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.job-type, .modalidad {
+    display: flex;
+    flex-direction: column; /* Alinea las etiquetas de checkbox en columna */
+    gap: 0.5rem;
+    align-items: center;
+}
+
+label {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    accent-color: #007bff; /* Cambia el color del checkbox */
+    width: 18px;
+    height: 18px;
+
+}
+
+/* Opciones de hover */
+
+input[type="checkbox"]:hover {
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+
+
+}
+
+@media (max-width: 768px) {
+    .options {
+        flex-direction: row;
+        align-items: stretch;
+        gap: 1rem;
+    }
+}

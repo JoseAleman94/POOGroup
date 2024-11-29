@@ -1,0 +1,129 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+/* Estilo del título */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Botón principal */
+button {
+    background-color: #5b9bd5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4a8ac2;
+}
+
+/* Sección de tarjetas */
+#cardSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #e8e8e8;
+    border-radius: 10px;
+    justify-items: center; /* Centra las tarjetas cuando hay pocas */
+}
+
+/* Tarjetas individuales */
+.modern-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 300px; /* Limita el tamaño máximo de las tarjetas */
+}
+
+.modern-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen de perfil */
+.modern-card img {
+    width: 60%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #d1d1d1;
+}
+
+/* Título y texto */
+.card-title {
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Subestilos de texto */
+.descripcion, .job-type, .location, .salary, .title2 {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 5px 0;
+}
+
+/* Botón minimalista */
+.apply-button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    #cardSection {
+        padding: 10px;
+    }
+}

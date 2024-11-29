@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Usuario</title>
+    <link rel="stylesheet" href="./header_footer.css"> 
+    <link rel="stylesheet" href="./registroSolicitante.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="./registroSolicitante.js" defer></script>
+    <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript" defer></script>
+</head>
+<body>
+<main>
+    <nav>
+        <!-- Botón para ver el listado de solicitantes -->
+        <button onclick="window.location.href = '../listaSolicitantes/resultadoBusqueda.html'" id="btn-volver">Ver lista de solicitantes</button>
+    </nav>
+
+    <section class="fondo"> 
+        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp"
+        alt="Foto de inicio de sesión" class="imagen" />
+
+        <div class="caja-formulario">
+            <div id="contenedor">
+                <h1>Registro de Usuarios</h1>
+                <div class="card-body p-4 p-lg-5 text-black">
+                    <form id="formulario">
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Contraseña</label>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Apellidos</label>
+                            <input type="text" name="lastname" id="lastname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Fecha de Nacimiento</label>
+                            <input type="date" name="date" id="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Número de Contacto</label>
+                            <input type="text" name="phone" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Dirección</label>
+                            <input type="text" name="address" id="address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="puesto">Puesto</label>
+                            <input type="text" name="puesto" id="puesto" required>
+                        </div>
+
+                        <!-- Subir imagen y currículum -->
+                        <div class="form-group">
+                            <img id="prevista-imagen" alt="Vista previa de la imagen" />
+                            <button type="button" id="subir-imagen">Subir imagen</button>
+                        </div>
+
+                        <div class="form-group">
+                            <button class="btn-registrar" type="submit">Registrar Solicitante</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-contenido">
+        <!-- Aquí puedes añadir contenido del footer -->
+    </div>
+</footer>
+
+</body>
+</html>

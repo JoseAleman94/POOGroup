@@ -1,0 +1,150 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.fondo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #D8E9A8;
+    border-radius: 15px;
+    padding: 40px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+    width: 600px;
+}
+
+input, select {
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f6f9;
+    box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+input:focus, select:focus {
+    background-color: #d8e9a8;
+    transform: scale(1.05);
+    outline: none;
+}
+
+button {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    background-color: #1E5128;
+    border: 1px solid black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 200ms ease-in-out, transform 200ms ease-in-out;
+}
+
+button:hover {
+    background-color: #145a24;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+.imagen {
+    width: 300px;
+    border-radius: 15px;
+    margin-right: 40px;
+}
+
+#nombreUsuario {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fotoperfil {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#registroNegocio {
+    text-decoration: none;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 80px;
+}
+
+#contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+#registrarse, #iniciosesion {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    background-color: #D8E9A8;
+    border: none;
+    color: #1E5128;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 200ms ease-in-out, transform 200ms ease-in-out;
+}
+
+#registrarse:hover, #iniciosesion:hover {
+    background-color: #145a24;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #D8E9A8;
+    color: #1E5128;
+    font-family: 'Quicksand', sans-serif;
+}

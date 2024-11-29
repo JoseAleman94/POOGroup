@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro de Usuarios</title>
+  <link rel="stylesheet" href="registro_usuario.css" />
+  <link rel="icon" type="icon" href="../img/application.png" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="../3_Home/home.html" class="nav-link">Inicio</a></li>
+        <li class="nav-item"><a href="../4_publicar_empleos/publicar_empleo.html" class="nav-link">Publicar Empleo</a></li>
+        <li class="nav-item"><a href="../1_registro_usuarios/registro_usuario.html" class="nav-link">Registrarse</a></li>
+        <li class="nav-item"><a href="../2_Login/login.html" class="nav-link">Iniciar Sesion</a></li>
+  </ul>
+  </nav>
+
+  </header>
+
+  <main>
+    <aside>
+      <img src="../img/empleador-min.jpg" alt="imagen aside habitacion">
+    </aside>
+    <section>
+      <div>
+        <h2 class="logo"> Registro de <span>Usuario</span></h2>
+      </div>
+      <form id="formularioRegistro">
+        <div class="grid">
+          <div>
+            <label for="name">Nombre Completo</label>
+            <input type="text" id="name" required placeholder="Ingrese su nombre">
+          </div>
+          <div>
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" required placeholder="ejemplo@correo.com">
+          </div>
+          <div>
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" required placeholder="Contraseña">
+          </div>
+          <div>
+            <label for="confirm_password">Confirmar Contraseña</label>
+            <input type="password" id="confirm_password" required placeholder="Confirmar contraseña">
+          </div>
+          <div>
+            <label for="role">Rol</label>
+            <select id="role" name="role" required>
+              <option value="" disabled selected>Seleccione un rol</option>
+              <option value="buscador">Buscador de empleo</option>
+              <option value="empleador">Empleador</option>
+            </select>
+          </div>
+          <div class="register">
+            <button type="submit">Crear cuenta</button>
+          </div>
+        </div>
+      </form>
+    </section>
+    <br />
+  </main>
+
+  <footer>
+    <div class="footer">
+      <p>
+        &copy; 2024 EmpleosCR Inc. | Jeiner Blanco | Jose Aleman
+      </p>
+    </div>
+  </footer>
+  <script src="registro_usuario.js"></script>
+</body>
+</html>

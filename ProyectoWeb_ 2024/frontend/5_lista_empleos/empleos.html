@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Empleos</title>
+    <link rel="stylesheet" href="empleos.css">
+    <link rel="icon" type="icon" href="../img/application.png" />
+<body>
+
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#" class="nav-link">
+              
+            </li>
+            <li class="nav-item"><a href="../3_Home/home.html" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="../4_publicar_empleos/publicar_empleo.html" class="nav-link">Publicar Empleo</a></li>
+            <li class="nav-item"><a href="../1_registro_usuarios/registro_usuario.html" class="nav-link">Registrarse</a></li>
+            <li class="nav-item"><a href="../2_Login/login.html" class="nav-link">Iniciar Sesion</a></li>
+        </ul>
+    </nav>
+
+<header>
+  <span>
+    <h1>Empleos</h1>
+  </span>
+    <div class="content">
+        <p>Encuentra las mejores ofertas de empleos</p>
+    </div>
+</header>
+
+<div class="search-bar">
+
+
+
+
+    <div class="locations">
+    <select  id="titulo" required>
+      <option value="" disabled selected>Seleccione un título de empleo</option>
+      <option value="DESARROLLADOR">Desarrollador</option>
+      <option value="DISEÑADOR">Diseñador</option>
+      <option value="MERCADEO">Mercadeo</option>
+      <option value="VENTAS">Ventas</option>
+      <option value="RECURSOS HUMANOS">Recursos Humanos</option>
+      <option value="GERENTE DE PROYECTOS">Gerente de Proyectos</option>
+      <option value="ANALISTA DE DATOS">Analista de Datos</option>
+      <option value="INGENIERO DE QA">Ingeniero de QA</option>
+      <option value="SOPORTE AL CLIENTE">Soporte al Cliente</option>
+      <option value="GERENTE FINANCIERO">Gerente Financiero</option>
+    </select>
+</div>
+
+
+
+  <div class="dates">
+    <select id="salary" required>
+      <option value="" disabled selected>Seleccione un rango salarial</option>
+      <option value="MENOS DE $500">MENOS DE $500</option>
+      <option value="ENTRE $500 Y $1000">$500 - $1000</option>
+      <option value="ENTRE $1000 Y $2000">$1000 - $2000</option>
+      <option value="ENTRE $2000 Y $3000">$2000 - $3000</option>
+      <option value="MAS DE $3000">$3000 O MÁS</option>
+    </select>
+</div>
+
+
+
+<div>
+  <select id="location" required>
+    <option value="" disabled selected>Seleccione una provincia</option>
+    <option value="San José">San José</option>
+    <option value="Alajuela">Alajuela</option>
+    <option value="Heredia">Heredia</option>
+    <option value="Cartago">Cartago</option>
+    <option value="Guanacaste">Guanacaste</option>
+    <option value="Puntarenas">Puntarenas</option>
+    <option value="Limón">Limón</option>
+  </select>
+</div>
+</div>
+
+
+<section>
+<div class="options">
+    <div class="job-type">
+
+        <div>
+            <p>Tipo de trabajo:</p>
+        </div>
+
+        <div style="display: flex; flex-direction: column;">
+          <label><input type="checkbox" name="job_type" value="Tiempo completo"> Tiempo completo</label>
+            <label><input type="checkbox" name="job_type" value="Medio tiempo"> Medio tiempo</label>
+        </div>
+
+    </div>
+
+    <div class="contienebtn">
+      <button id="limpiar" onclick="limpiarFiltros()"> Limpiar filtros </button>
+    </div>
+    
+    <div class="modalidad">
+
+        <div>
+            <p>Modalidad:</p>
+        </div>
+
+        <div style="display: flex; flex-direction: column;">
+            <label><input type="checkbox" name="modalidad" value="Presencial"> Presencial</label>
+            <label><input type="checkbox" name="modalidad" value="Remoto"> Remoto</label>
+            <label><input type="checkbox" name="modalidad" value="Híbrido"> Híbrido</label>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<h2 id="no_disponible"></h2>
+
+
+              
+      <div id="cardSection"></div>
+
+      <script src="empleos.js"></script>
+    <footer>
+        <div class="footer">
+          <p>
+            &copy; 2024 EmpleosCR Inc. | Jeiner Blanco | Jose Aleman
+          </p>
+        </div>
+      </footer>
+    </body>
+</html>

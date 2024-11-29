@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Encuentra trabajos que se ajusten a tus habilidades y experiencia.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmpleosCR | Inicio</title>
+    <link rel="stylesheet" href="../css/Styles.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" type="image/png" href="../img/application.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+</head>
+<body>
+
+    <nav id="navbar" class="navbar">
+        <ul id="nav-menu" class="nav-menu">
+            <li class="nav-item"><a href="../3_Home/home.html" class="nav-link">Inicio</a></li>
+            <li id="nav_publicar_empleo" class="nav-item"><a href="../4_publicar_empleos/publicar_empleo.html" class="nav-link">Publicar Empleo</a></li>
+            <li id="nav_registrarse" class="nav-item"><a href="../1_registro_usuarios/registro_usuario.html" class="nav-link">Registrarse</a></li>
+            <li id="nav_login" class="nav-item"><a href="../2_Login/login.html" class="nav-link">Iniciar Sesión</a></li>
+        </ul>
+
+
+        <div  class="usuario">
+            <button id="login"><a href="../2_Login/login.html">Login</a></button>
+            <span id="nombreUsuario" class="nombre-usuario" onclick="toggleMenu()"></span>
+            <div id="dropdownMenu" class="dropdown-menu">
+                <img id="usuarioImagen" src="" alt="Imagen de Perfil" class="perfil-imagen">
+                <p style="font-size: 1.5rem; font-weight: bolder; ;" id="usuarioNombreCompleto"></p>
+                <p id="usuarioCorreo"></p>
+                <button onclick="editarPerfil()">Perfil</button>
+                <button onclick="salir()">Cerrar Sesión</button>
+            </div>
+        </div>
+        
+
+
+
+            </nav>
+
+    <div class="main-container">
+        <div class="left-container">
+            <h1>Encuentra un <span>Trabajo</span> que se ajuste a tus <span>Habilidades</span></h1>
+            <p>Somos una comunidad creada para profesionales que buscan una oportunidad laboral dentro de su ámbito de experiencia.</p>
+            <button id="empleosDisponibles" type="button">Empleos Disponibles</a>  
+            </button> 
+            <button id="permisoparaempleosDisponibles">Iniciar Secion para ver empleos disponibles</button>       
+        </div>
+
+        <div class="right-container">
+            <img src="pic1.png" alt="Imagen de búsqueda de empleo" class="img">
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="info-container">
+            <h2>¿Por qué elegirnos?</h2>
+            <p> Somos líderes en el mercado.</p>
+        </div>
+        <div class="info-container">
+            <h2>¿Nueva oportunidad laboral?</h2>
+            <p> Te ofrecemos una amplia gama de empleos.</p>
+        </div>
+        <div class="info-container">
+            <h2>Interface Simple</h2>
+            <p> Una plataforma amigable para una mejor experiencia.</p>
+        </div>
+        <div class="info-container">
+            <h2>Satisfacción Garantizada</h2>
+            <p> Nuestros clientes confirman nuestra eficacia.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; 2024 EmpleosCR Inc. | Jeiner Blanco | Jose Aleman</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="home.js"></script>
+</body>
+</html>

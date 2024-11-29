@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publicacion Empleo</title>
+  <link rel="stylesheet" href="publicar_empleos.css" />
+  <link rel="icon" type="icon" href="../img/application.png" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <ul class="nav-menu">
+          <li class="nav-item"><a href="#" class="nav-link">
+              <!--<img src="../img/application.png" class="">--></a>
+          </li>
+          <li class="nav-item"><a href="../3_Home/home.html" class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="../4_publicar_empleos/publicar_empleo.html" class="nav-link">Publicar Empleo</a></li>
+          <li class="nav-item"><a href="../1_registro_usuarios/registro_usuario.html" class="nav-link">Registrarse</a></li>
+          <li class="nav-item"><a href="../2_Login/login.html" class="nav-link">Iniciar Sesion</a></li>
+          <li>    <div class="user">
+            <img style="width: 20px;" src="../img/perfil.png" alt="user" class="user-img">
+            <span class="user-name">Jeiner Blanco</span>  
+          </div>
+
+      </li>
+      
+    </ul>
+    <!--Usuario-->
+  </nav>
+</header>
+
+  <main>
+    <aside>
+      <img src="../img/empleador-min.jpg" alt="imagen aside habitacion">
+    </aside>
+    <section>
+        <div>
+          <h2 class="logo"> Publicar <span>Oferta de Trabajo</span></h2>
+        </div>
+        <form id="formulario_publicar_empleo">
+          <div class="grid">
+            <!-- Select de Título del Empleo -->
+            <div>
+              <label for="titulo">Título del Empleo</label>
+              <select id="titulo" required>
+                <option value="" disabled selected>Seleccione un título de empleo</option>
+                <option value="DESARROLLADOR">Desarrollador</option>
+                <option value="DISEÑADOR">Diseñador</option>
+                <option value="MERCADEO">Mercadeo</option>
+                <option value="VENTAS">Ventas</option>
+                <option value="RECURSOS HUMANOS">Recursos Humanos</option>
+                <option value="GERENTE DE PROYECTOS">Gerente de Proyectos</option>
+                <option value="ANALISTA DE DATOS">Analista de Datos</option>
+                <option value="INGENIERO DE QA">Ingeniero de QA</option>
+                <option value="SOPORTE AL CLIENTE">Soporte al Cliente</option>
+                <option value="GERENTE FINANCIERO">Gerente Financiero</option>
+              </select>
+            </div>
+            <div>
+              <label for="descripcion">Descripción del trabajo</label>
+              <textarea id="descripcion" required placeholder="Describa las responsabilidades y requisitos"></textarea>
+            </div>
+            <!-- Select de Rango Salarial -->
+            <div>
+              <label for="salary">Rango Salarial</label>
+              <select id="salary" required>
+                <option value="" disabled selected>Seleccione un rango salarial</option>
+                <option value="MENOS DE $500">MENOS DE $500</option>
+                <option value="ENTRE $500 Y $1000">$500 - $1000</option>
+                <option value="ENTRE $1000 Y $2000">$1000 - $2000</option>
+                <option value="ENTRE $2000 Y $3000">$2000 - $3000</option>
+                <option value="MAS DE $3000">$3000 O MÁS</option>
+              </select>
+            </div>
+            <!-- Select de Provincias -->
+            <div>
+              <label for="location">Ubicación</label>
+              <select id="location" required>
+                <option value="" disabled selected>Seleccione una provincia</option>
+                <option value="San José">San José</option>
+                <option value="Alajuela">Alajuela</option>
+                <option value="Heredia">Heredia</option>
+                <option value="Cartago">Cartago</option>
+                <option value="Guanacaste">Guanacaste</option>
+                <option value="Puntarenas">Puntarenas</option>
+                <option value="Limón">Limón</option>
+              </select>
+            </div>
+            <div>
+              <label for="job_type">Tipo de trabajo</label>
+              <select id="job_type" name="job_type">
+                <option value="" disabled selected>Seleccione el tipo de trabajo</option>
+                <option value="Tiempo completo">Tiempo completo</option>
+                <option value="Medio tiempo">Medio tiempo</option>
+              </select>
+            </div>
+            <div>
+              <label for="modalidad">Modalidad</label>
+              <select id="modalidad" name="modalidad">
+                <option value="" disabled selected>Seleccione la modalidad</option>
+                <option value="Presencial">Presencial</option>
+                <option value="Remoto">Remoto</option>
+                <option value="Híbrido">Híbrido</option>
+              </select>
+            </div>
+            <div>
+              <label for="expiration">Fecha de vencimiento</label>
+              <input id="expiration" type="date" required>
+            </div>
+            <div class="register">
+              <button type="submit">Publicar oferta</button>
+            </div>
+          </div>
+        </form>
+      </section>
+          <br />
+  </main>
+  <footer>
+    <div class="footer">
+      <p>
+        &copy; 2024 EmpleosCR Inc. | Jeiner Blanco | Jose Aleman
+      </p>
+    </div>
+  </footer>
+  <script src="publicar_empleo.js"></script>
+</body>
+
+</html>
